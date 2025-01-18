@@ -1,7 +1,7 @@
 # SanMar Purchase Order Integration Guide v21.9
 
 ## Authentication
-- Use your existing SanMar username kingcl and password candis21.
+- Use your existing SanMar username and password.
 - Setup separate web user accounts at [SanMar Webuser Signup](https://www.sanmar.com/signup/webuser).
 - Contact **sanmarintegrations@sanmar.com** for EDEV setup or integration requests.
 
@@ -12,6 +12,10 @@ SanMar supports FTP and SOAP-based Web Service integration for automated order p
 1. **getPreSubmitInfo**: Confirms inventory availability from the closest warehouse.
 2. **submitPO**: Submits purchase orders for processing.
 3. **PromoStandards SendPO**: For detailed and configurable purchase orders.
+
+### WSDL Endpoints
+- **EDEV Environment**: [https://edev-ws.sanmar.com:8080/SanMarWebService/SanMarPOServicePort?wsdl](https://edev-ws.sanmar.com:8080/SanMarWebService/SanMarPOServicePort?wsdl)
+- **Production Environment**: [https://ws.sanmar.com:8080/SanMarWebService/SanMarPOServicePort?wsdl](https://ws.sanmar.com:8080/SanMarWebService/SanMarPOServicePort?wsdl)
 
 ## File-Based FTP Order Integration
 FTP integration uses three required files:
