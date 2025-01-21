@@ -30,8 +30,8 @@
    ```env
    # Printavo API Configuration
    PRINTAVO_API_URL=https://www.printavo.com/api/v2
-   PRINTAVO_EMAIL=your-email@example.com
-   PRINTAVO_ACCESS_TOKEN=your-api-token
+   PRINTAVO_EMAIL=sales@kingclothing.com
+   PRINTAVO_ACCESS_TOKEN=uyZXl2kWJNSXwR_MXMuNWQ
 
    # Server Configuration
    PORT=3000

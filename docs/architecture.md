@@ -4,24 +4,18 @@
 The SanMar Auto Order Integration is built with a modular architecture consisting of several key components:
 
 1. **API Layer**
-   - Express.js server handling HTTP requests
-   - Route handlers for file uploads and order processing
-   - Middleware for error handling and request validation
+   - Express.js routes
+   - Middleware for authentication and validation
 
-2. **OCR Processing**
-   - PDF to image conversion using `pdf2img`
-   - Text extraction using Tesseract.js
-   - Multi-page document handling and result aggregation
+2. **Service Layer**
+   - OCR processing service
+   - Printavo integration service
+   - Line item parsing service
 
-3. **Printavo Integration**
-   - GraphQL client implementation
-   - Request/response validation using Zod
-   - Rate limiting and retry handling
-
-4. **Data Validation Layer**
-   - Schema validation using Zod
-   - Custom validation rules for business logic
-   - Error aggregation and reporting
+3. **Utility Layer**
+   - File handling utilities
+   - PDF conversion utilities
+   - OCR processing utilities
 
 ## Data Flow
 

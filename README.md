@@ -1,58 +1,61 @@
-# SanMar Integration Service
+# SanMar Integration with Printavo
 
-This service integrates Printavo invoice data with SanMar's SOAP API for automated order processing.
+A full-stack application that integrates SanMar's SOAP API with Printavo for automated order processing.
 
-## Features
+## Project Structure
 
-- Process Printavo invoices (via OCR or direct input)
-- Map invoice data to SanMar's required fields
-- Check inventory availability
-- Submit purchase orders to SanMar
-- Error handling and logging
-
-## Setup
-
-1. Install dependencies:
-```bash
-npm install
+```
+sanmar-integration/
+├── backend/           # Node.js/Express backend
+├── client/           # React/Vite frontend
+├── docs/             # Project documentation
+└── package.json      # Workspace manager
 ```
 
-2. Configure environment variables:
-- Copy `.env.example` to `.env`
-- Update the following variables:
-  - `SANMAR_USERNAME`: Your SanMar API username
-  - `SANMAR_PASSWORD`: Your SanMar API password
-  - `SANMAR_WSDL_URL`: SanMar WSDL URL
-  - `PORT`: Application port (default: 3000)
-  - `MONGODB_URI`: MongoDB connection string
+## Quick Start
 
-3. Start the server:
+1. Install dependencies for all workspaces:
 ```bash
-# Development mode
-npm run dev
+npm run install:all
+```
 
-# Production mode
+2. Set up environment variables:
+   - Copy `.env.example` to `.env` in both `backend/` and `client/` directories
+   - Fill in the required environment variables in each `.env` file
+
+3. Start development servers:
+```bash
+npm run dev
+```
+This will start both the backend (port 3000) and frontend (port 5173) in development mode.
+
+Or for production:
+```bash
 npm start
 ```
 
-## API Endpoints
-
-- `GET /health`: Health check endpoint
-- `POST /api/invoice`: Process Printavo invoice
-- `POST /api/order`: Submit order to SanMar
-- `GET /api/inventory/:style/:color`: Check inventory availability
-
 ## Development
 
-The project structure is organized as follows:
+- Backend development: `npm run dev:backend`
+- Frontend development: `npm run dev:frontend`
+
+## Documentation
+
+- Backend API documentation is available in the `docs/` directory
+- Frontend component documentation is available in Storybook (run `npm run storybook` in the client directory)
+
+## Testing
+
+Run tests for both frontend and backend:
+```bash
+npm test
 ```
-sanmar-integration/
-├── app.js              # Application entry point
-├── routes/             # API routes
-├── controllers/        # Route controllers
-├── services/          # Business logic
-└── tests/             # Test files
-```
+
+## Contributing
+
+1. Create a new branch for your feature
+2. Make your changes
+3. Submit a pull request
 
 ## License
 

@@ -1,0 +1,37 @@
+{
+  "name": "sanmar-integration-backend",
+  "version": "1.0.0",
+  "description": "Backend service for SanMar SOAP API with Printavo invoice processing",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sanmar",
+    "printavo",
+    "integration",
+    "backend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "graphql": "^16.10.0",
+    "graphql-request": "^7.1.2",
+    "mongoose": "^7.8.4",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.79.1",
+    "pdf2img": "^0.5.0",
+    "strong-soap": "^3.5.2",
+    "tesseract.js": "^4.1.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+} 
