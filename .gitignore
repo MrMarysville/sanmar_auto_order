@@ -2,3 +2,5 @@ node_modules
 # Environment Variables
 .env
 *.env
+.env.backup
+backend/.env.backup
